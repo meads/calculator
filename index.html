@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div id="calculator">
+            <div id="display"></div>
+            <div id="buttons">
+                <div class="button-row">
+                    <button onclick="buttonClicked('7')" class="button digit">7</button>
+                    <button onclick="buttonClicked('8')" class="button digit">8</button>
+                    <button onclick="buttonClicked('9')" class="button digit">9</button>
+                    <button onclick="operatorClicked('/')" class="button">/</button>
+                </div>
+                <div class="button-row">
+                    <button onclick="buttonClicked('4')" class="button digit">4</button>
+                    <button onclick="buttonClicked('5')" class="button digit">5</button>
+                    <button onclick="buttonClicked('6')" class="button digit">6</button>
+                    <button onclick="operatorClicked('x')" class="button">x</button>
+                </div>
+                <div class="button-row">
+                    <button onclick="buttonClicked('1')" class="button digit">1</button>
+                    <button onclick="buttonClicked('2')" class="button digit">2</button>
+                    <button onclick="buttonClicked('3')" class="button digit">3</button>
+                    <button onclick="operatorClicked('-')" class="button">-</button>
+                </div>
+                <div class="button-row">
+                    <button onclick="clearButtonClicked()"  class="button action">C</button>
+                    <button onclick="buttonClicked('0')" class="button digit">0</button>
+                    <button onclick="equalsClicked()" class="button action">=</button>
+                    <button onclick="operatorClicked('+')" class="button">+</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
