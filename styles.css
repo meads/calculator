@@ -3,6 +3,7 @@ body {
     margin: 0;
     box-sizing: border-box;
     font-family: monospace; 
+    background-color: #555;
 }
 
 *, *::before, *::after {
